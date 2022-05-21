@@ -6,10 +6,6 @@
 		{
 			"type": "npm",
 			"script": "watch",
-			"problemMatcher": [
-				"$ts-webpack-watch",
-				"$tslint-webpack-watch"
-			],
 			"isBackground": true,
 			"presentation": {
 				"reveal": "never",
@@ -38,6 +34,14 @@
 				"npm: watch-tests"
 			],
 			"problemMatcher": []
+		},
+		{
+			"type": "npm",
+			"script": "compile-tests",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: compile-tests",
+			"detail": "tsc -p . --outDir out"
 		}
 	]
 }
